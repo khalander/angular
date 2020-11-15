@@ -1,0 +1,21 @@
+<div>
+
+  <app-department #child></app-department>
+  {{child.departmentList | json}}
+  <button (click)="child.greetMufeez()">Click</button>
+
+<!-- <div class="container-fluid">
+  <input #nameRef type="text"  [ngModel]="userNameSTB" (ngModelChange)="greetMufeez($event)" />
+</div> -->
+
+<div class="container-fluid">
+  <input type="text"  [(ngModel)]="customerName"  />
+  
+  customerName: {{customerName}}
+
+
+<button (click)="greetStudent()">Greet student</button>
+<button (click)="appreciateStudent()">Appreciate student</button>
+
+
+</div>
